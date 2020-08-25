@@ -8,77 +8,133 @@ body {
 
 
 
+// nav {
+//     // background-color: red;
+//     display: flex;
+//     justify-content: space-between;
+//     color: black;
+//     padding: 0.5em;
+//     text-align: center;
+
+//     & > div {
+//         display: flex;
+//         margin: auto;
+//         & > div {
+//             margin: auto 0.5em auto auto;
+//         }
+
+//     }
+//     .hamburger {
+//         background-color: blue;
+//         width: 3.1875em;
+        
+
+//         .link1 {
+//             background-color: green;
+//             width: 3.0625em;
+//             text-transform: uppercase;
+//             height: 3em;
+//         }
+//         .link2 {
+//             background-color: yellow;
+//             width: 3.9587em;
+//             text-transform: uppercase;
+//         }
+        
+//         img {
+//             height: 24px;
+//             width: 24px;
+//         }
+//     }
+
+//     .right-nav {
+//         display: flex;
+//         justify-content: space-around;
+
+//         .bento {
+//             width: 3.1875em;
+//             margin: auto 0 auto 0;
+            
+//             img {
+//                 height: 1em;
+//                 width: 1em;
+//             }
+//         }
+
+//         button {
+//             background-color: $google_button;
+//             color: white;
+//             width: 7.5em;
+//             height: 2.7em;
+//             border: 1px solid $google_button;
+//             border-radius: 4px;
+//         }
+//     }
+    
+
+// }
+
+// .active {
+//     border-bottom: 2px solid $google_blue;
+//     padding-bottom: 0.7em;
+// }
+// .inactive {
+//     border-bottom: 2px solid $google_blue;
+//     padding-bottom:26px;
+// }
+
+
 nav {
-    // background-color: red;
+    height: 3em;
+    width: 23.4375em;
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: space-between;
-    color: black;
-    padding: 0.5em;
-    text-align: center;
 
-    & > div {
+    & > div { // left and right part of navbar 
         display: flex;
-        margin: auto;
-        & > div {
-            margin: auto 0.5em auto auto;
-        }
-
+        flex-direction: row;
     }
-    .hamburger {
-        background-color: blue;
-        width: 3.1875em;
-        
 
-        .link1 {
-            background-color: green;
-            width: 3.0625em;
-            text-transform: uppercase;
-            height: 3em;
+    .left-nav {  
+        .hamburger {
+            margin: auto 1em;
+            height: 1.5em;
+            width: 1.5em;
+            max-height: 3em;;
+            img {
+                width: 100%;
+                height: 100%;
+                
+            }
         }
-        .link2 {
-            background-color: yellow;
-            width: 3.9587em;
+        .link {
+            margin: auto 2em auto 0.5em;
             text-transform: uppercase;
-        }
-        
-        img {
-            height: 24px;
-            width: 24px;
+            font-size: 0.7em;
+            font-weight: 600;
         }
     }
 
     .right-nav {
-        display: flex;
-        justify-content: space-around;
-
-        .bento {
-            width: 3.1875em;
-            margin: auto 0 auto 0;
-            
-            img {
-                height: 1em;
-                width: 1em;
-            }
-        }
-
         button {
             background-color: $google_button;
             color: white;
-            width: 7.5em;
-            height: 2.7em;
-            border: 1px solid $google_button;
+            border: none;
             border-radius: 4px;
+            margin: 0.5em 1em 0.5em 0.5em;
+        }
+        .bento {
+            padding: 1em;
+            img {
+                width: 1em;
+                height: 1em;
+            }
         }
     }
+
     
 
-}
 
-.active {
-    border-bottom: 2px solid $google_blue;
-    padding-bottom: 0.7em;
-}
-.inactive {
-    border-bottom: 2px solid $google_blue;
-    padding-bottom:26px;
 }
