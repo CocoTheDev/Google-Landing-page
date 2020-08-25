@@ -7,83 +7,6 @@ body {
 }
 
 
-
-// nav {
-//     // background-color: red;
-//     display: flex;
-//     justify-content: space-between;
-//     color: black;
-//     padding: 0.5em;
-//     text-align: center;
-
-//     & > div {
-//         display: flex;
-//         margin: auto;
-//         & > div {
-//             margin: auto 0.5em auto auto;
-//         }
-
-//     }
-//     .hamburger {
-//         background-color: blue;
-//         width: 3.1875em;
-        
-
-//         .link1 {
-//             background-color: green;
-//             width: 3.0625em;
-//             text-transform: uppercase;
-//             height: 3em;
-//         }
-//         .link2 {
-//             background-color: yellow;
-//             width: 3.9587em;
-//             text-transform: uppercase;
-//         }
-        
-//         img {
-//             height: 24px;
-//             width: 24px;
-//         }
-//     }
-
-//     .right-nav {
-//         display: flex;
-//         justify-content: space-around;
-
-//         .bento {
-//             width: 3.1875em;
-//             margin: auto 0 auto 0;
-            
-//             img {
-//                 height: 1em;
-//                 width: 1em;
-//             }
-//         }
-
-//         button {
-//             background-color: $google_button;
-//             color: white;
-//             width: 7.5em;
-//             height: 2.7em;
-//             border: 1px solid $google_button;
-//             border-radius: 4px;
-//         }
-//     }
-    
-
-// }
-
-// .active {
-//     border-bottom: 2px solid $google_blue;
-//     padding-bottom: 0.7em;
-// }
-// .inactive {
-//     border-bottom: 2px solid $google_blue;
-//     padding-bottom:26px;
-// }
-
-
 nav {
     height: 3em;
     width: 23.4375em;
@@ -110,9 +33,10 @@ nav {
             }
         }
         .link {
-            margin: auto 2em auto 0.5em;
+            padding-right: 0.6em;
+            padding-left: 0.6em;
+            margin: auto 0.4em auto 0.4em;
             text-transform: uppercase;
-            font-size: 0.7em;
             font-weight: 600;
         }
     }
@@ -137,6 +61,9 @@ nav {
     }
 
     
-
+    .active {
+        color: $google_blue;
+        border-bottom: 2px solid $google_blue;
+    }
 
 }
