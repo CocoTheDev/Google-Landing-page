@@ -1,0 +1,71 @@
+@import url(//fonts.googleapis.com/css?family=Roboto);
+body {
+  font-family: Roboto,HelveticaNeue,Arial,sans-serif;
+  font-size: 16px;
+  color: #757575;
+  letter-spacing: 0.046em; }
+
+a:visited {
+  color: inherit; }
+
+a {
+  text-decoration: none;
+  font-size: 0.75em;
+  font-weight: 600;
+  line-height: 3em; }
+
+body {
+  font-size: 16px;
+  height: 100vh;
+  width: 100vw; }
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  color: black;
+  padding: 0.5em;
+  text-align: center; }
+  nav > div {
+    display: flex;
+    margin: auto; }
+    nav > div > div {
+      margin: auto 0.5em auto auto; }
+  nav .hamburger {
+    background-color: blue;
+    width: 3.1875em; }
+    nav .hamburger .link1 {
+      background-color: green;
+      width: 3.0625em;
+      text-transform: uppercase;
+      height: 3em; }
+    nav .hamburger .link2 {
+      background-color: yellow;
+      width: 3.9587em;
+      text-transform: uppercase; }
+    nav .hamburger img {
+      height: 24px;
+      width: 24px; }
+  nav .right-nav {
+    display: flex;
+    justify-content: space-around; }
+    nav .right-nav .bento {
+      width: 3.1875em;
+      margin: auto 0 auto 0; }
+      nav .right-nav .bento img {
+        height: 1em;
+        width: 1em; }
+    nav .right-nav button {
+      background-color: #1A73E8;
+      color: white;
+      width: 7.5em;
+      height: 2.7em;
+      border: 1px solid #1A73E8;
+      border-radius: 4px; }
+
+.active {
+  border-bottom: 2px solid #4285f4;
+  padding-bottom: 0.7em; }
+
+.inactive {
+  border-bottom: 2px solid #4285f4;
+  padding-bottom: 26px; }

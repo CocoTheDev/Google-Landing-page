@@ -1,0 +1,26 @@
+@import url(//fonts.googleapis.com/css?family=Roboto);
+
+$google_blue : #4285f4;
+$google_button : #1A73E8;
+$google_grey : #757575;
+
+body {
+    font-family: Roboto,HelveticaNeue,Arial,sans-serif;
+    font-size: 16px;
+    color: $google_grey;
+    letter-spacing: 0.046em;
+
+}
+
+a:visited {
+    color: inherit;
+}
+
+a {
+    text-decoration: none;
+    font-size: 0.75em;
+    font-weight: 600;
+    line-height: 3em;
+}
+
+
