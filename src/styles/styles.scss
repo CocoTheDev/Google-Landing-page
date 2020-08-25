@@ -90,10 +90,34 @@ nav {
         border-radius: 25px;
 
         img {
-            height: 2.625em;
+            height: 2.5em;
             width: 1.5em;
             margin-left: 0.5em;
         }
     }
 }
 
+footer {
+    background-color: $footer_bg;
+    height: 5.6875em;
+    border: 1px solid $footer_border;
+
+    .country {
+        border-bottom: 1px solid $footer_border;
+        height: 2.1875em;
+        div {
+            height: 2.1874em;
+            width: 20.25em;
+            margin: auto 0.75em;
+            padding-left: 1.6875em;
+        }
+
+    }
+
+    .localisation {
+        padding: 1em 0;
+        height: 1.5625em;
+
+
+    }
+}
