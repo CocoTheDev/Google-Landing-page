@@ -68,32 +68,31 @@ nav {
 }
 
 .main {
-    // display: flex;
-    // flex-direction: column;
     height: 31.75em;
     padding-top: 1.25em;
 
     .logo {
-        position: relative;
-        top: 9%;
-        margin: auto;
-        max-height: 3.5em;
+        margin: 2.25em auto 1.125em auto;
+        max-height: 4.5em;
         max-width: 10em;
 
         img {
+            margin: 0.5em 0;
             height: 100%;
             width: 100%;
         }
     }
 
     .search {
-        margin: auto 1em auto 1em;
+        margin: auto 0.5em auto 0.5em;
+        height: 2.5em;
+        border: 1px solid #dadce0;
+        border-radius: 25px;
 
-        .input {
-            width: 100%;
-            height: 2.5em;
-            border: 1px solid #dadce0;
-            border-radius: 25px;
+        img {
+            height: 1.5em;
+            width: 1.5em;
+            
         }
     }
 }
