@@ -118,7 +118,9 @@ nav {
     }
 
     .right-nav {
+        width: 10.625em;
         button {
+            width: 100%;
             background-color: $google_button;
             color: white;
             border: none;
