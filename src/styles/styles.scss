@@ -120,10 +120,16 @@ footer {
     letter-spacing: normal;
     background-color: $footer_bg;
     height: 5.6875em;
-    border: 1px solid $footer_border;
+
+    & > div {
+        border-bottom: 1px solid $footer_border;
+    }
+    & > div:first-child {
+        border-top: none;
+    }
+    
 
     .country {
-        border-bottom: 1px solid $footer_border;
         height: 2.1875em;
         margin: auto;
         div {
@@ -161,5 +167,12 @@ footer {
     .legal {
         height: 8.92em;
         background-color: $footer_bg;
+        text-align: center;
+        line-height: 2.692em;
+        font-weight: normal;
+
+        & > div:first-child {
+            padding-top: 0.769em;
+        }
     }
 }
