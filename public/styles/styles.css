@@ -125,3 +125,6 @@ footer {
         content: " - ";
         color: #333;
         font-weight: normal; }
+  footer .legal {
+    height: 8.92em;
+    background-color: #f2f2f2; }
