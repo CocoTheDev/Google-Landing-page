@@ -169,13 +169,13 @@ footer {
         text-align: center;
         display: block;
         padding-bottom: 0.769em;
+        border-bottom: none;
 
         & > div {
             & > a {
                 &:first-child {
                     padding-left: 0;
                 }
-
                 padding-left: 2.077em;
             }
             

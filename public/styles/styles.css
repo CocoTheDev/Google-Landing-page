@@ -131,7 +131,8 @@ footer {
     background-color: #f2f2f2;
     text-align: center;
     display: block;
-    padding-bottom: 0.769em; }
+    padding-bottom: 0.769em;
+    border-bottom: none; }
     footer .legal > div > a {
       padding-left: 2.077em; }
       footer .legal > div > a:first-child {
