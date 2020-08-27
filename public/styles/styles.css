@@ -113,7 +113,7 @@ footer {
       margin: auto 0.75em; }
   footer .localisation {
     padding: 1.1538em 0;
-    height: 1.5625em;
+    height: 1.923em;
     font-size: 13px;
     line-height: 1.5625em;
     text-align: center; }
@@ -128,10 +128,10 @@ footer {
         color: #333;
         font-weight: normal; }
   footer .legal {
-    height: 8.92em;
     background-color: #f2f2f2;
     text-align: center;
-    display: block; }
+    display: block;
+    padding-bottom: 0.769em; }
     footer .legal > div > a {
       padding-left: 2.077em; }
       footer .legal > div > a:first-child {

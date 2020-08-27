@@ -140,7 +140,7 @@ footer {
 
     .localisation {
         padding: 1.1538em 0;
-        height: 1.5625em;
+        height: 1.923em;
         font-size: 13px;
         line-height: 1.5625em;
         text-align: center;
@@ -165,10 +165,10 @@ footer {
     }
 
     .legal {
-        height: 8.92em;
         background-color: $footer_bg;
         text-align: center;
         display: block;
+        padding-bottom: 0.769em;
 
         & > div {
             & > a {
