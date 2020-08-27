@@ -168,8 +168,24 @@ footer {
         height: 8.92em;
         background-color: $footer_bg;
         text-align: center;
-        line-height: 2.692em;
-        font-weight: normal;
+        display: block;
+
+        & > div {
+            & > a {
+                &:first-child {
+                    padding-left: 0;
+                }
+
+                padding-left: 2.077em;
+            }
+            
+        }
+
+        a {
+            line-height: 2.692em;
+            font-weight: 400;
+            font-size: 13px;
+        }
 
         & > div:first-child {
             padding-top: 0.769em;
