@@ -1,5 +1,6 @@
 @import 'font';
 
+// Mobile first (Iphone 6/7/8)
 body {
     font-size: 16px;
     height: 100vh;
@@ -121,6 +122,7 @@ footer {
     background-color: $footer_bg;
     height: 5.6875em;
 
+
     & > div {
         border-bottom: 1px solid $footer_border;
     }
@@ -191,4 +193,34 @@ footer {
             padding-top: 0.769em;
         }
     }
+}
+
+
+// Mobile Iphone 5/SE
+@media screen and (max-device-width:374px) {
+    
+    footer {
+        background-color: red;
+    }
+
+}
+
+
+
+// Laptop
+@media screen and (min-device-width:703px), screen and (min-width:703px) {
+
+    footer {
+        background-color: green;
+    }
+
+}
+
+// Large Screen
+@media screen and (min-device-width:800px), screen and (min-width:800px) {
+
+    footer {
+        background-color: yellow;
+    }
+
 }

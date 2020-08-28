@@ -23,12 +23,12 @@ I think I loose 1h on this, the #551A8B color of the link was still here and not
 
 After research, I found that this is the color of visited links. I though about it, but I never clicked on theses links since I started the project, so what's going on ? Why my browser put this color on my unvisited link ?
 
-Where the "bug" comes in, is that the url still the same project after project, it is `http://127.0.0.1:8080/public/#`. So sure I was visited this url in the past in other project ... and chrome remembers it.
+From where comes this "bug" ? The thing is that the url of the link `http://127.0.0.1:8080/public/#`, is present in many local project I had. So sure I was visited this url in the past ... and chrome remembers it.
 
 So I simply put `` a:visited { color: inherit; }`` and everything was ok.
   
-##  Futurs  Releases:  
+##  Time to do:  
   
-Not planned  
+1) Integration mobile first Iphone 6/7/8 without sidebar: 10h
   
 #####  Created by Jonathan Lutz

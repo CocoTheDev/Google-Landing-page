@@ -143,3 +143,15 @@ footer {
       font-size: 13px; }
     footer .legal > div:first-child {
       padding-top: 0.769em; }
+
+@media screen and (max-device-width: 374px) {
+  footer {
+    background-color: red; } }
+
+@media screen and (min-device-width: 703px), screen and (min-width: 703px) {
+  footer {
+    background-color: green; } }
+
+@media screen and (min-device-width: 800px), screen and (min-width: 800px) {
+  footer {
+    background-color: yellow; } }
