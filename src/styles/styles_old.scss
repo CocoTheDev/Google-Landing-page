@@ -196,29 +196,21 @@ footer {
 }
 
 
-// // Mobile Iphone 5/SE
-// @media screen and (max-device-width:374px) {
+// Mobile Iphone 5/SE
+@media screen and (max-device-width:374px) {
+
+}
 
 
 
-// }
+// Laptop
+@media screen and (min-device-width:703px), screen and (min-width:703px) {
 
 
+}
 
-// // Laptop
-// @media screen and (min-device-width:703px), screen and (min-width:703px) {
+// Large Screen
+@media screen and (min-device-width:800px), screen and (min-width:800px) {
 
-//     footer {
-//         background-color: green;
-//     }
 
-// }
-
-// // Large Screen
-// @media screen and (min-device-width:800px), screen and (min-width:800px) {
-
-//     footer {
-//         background-color: yellow;
-//     }
-
-// }
+}

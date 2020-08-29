@@ -1,5 +1,5 @@
-let viewport = 776;
-let elem = 215;
+let viewport = 568;
+let elem = 48;
 
 let result = elem/(viewport/100)
 

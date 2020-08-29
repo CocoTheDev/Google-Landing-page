@@ -43,15 +43,55 @@ But this method isn't working as I expected, when I make my screen bigger, the f
 
 When design broke, we call this breakpoint, so normally I should use media query to re-size every element at this breakpoint. But I want to try another thing, a little more complicate but maybe worth it.
 
-My next goal is to make all elements sizes dynamics, so I will use the method calc() and vh units to write less code as possible, and make everything responsive. Let's try.
+My next goal is to make all elements sizes dynamics, so I will use the calc() method, and viewport units to write less code as possible in media query. Let's try.
+
+3) ### Using Variables in @media Query
+The footer and navbar heights are the same in all devices. 
+Only the height of the main section change, for that reason I tried to declare a main_height variables in @media query, to fit the main section depends on device viewport. Exemple: 
+```
+// Mobile Iphone 6/7/8
+@media screen and (min-device-width:375px), screen and (min-width:375px) {
+    $main_height: 528px;
+}
+
+...
+```
+Unfortunely this doesn't work. Let's see if there's another solution..
+
+4) ### Using mixins
+I finally found a solution : mixins !
+I create a mixin called responsive-main-height, and wrote inthere each height size according to each media query.
+
+**_variables.scss**
+```
+@mixin responsive-main-height{
+
+    // Mobile Iphone 5/SE
+    @media screen and (max-device-width:370px), screen and (max-width:370px) {
+        height: 429px;
+    }
+
+    ...
+}
+```
+**styles.scss**
+```
+@import 'variables';
+main { 
+    @include responsive-main-height;
+}
+```
 
 
-3) ### How make responsive
-- Using 100% width instead of 100vw/vh for header, main and footer
+5) ### How I made it responsive
+- Using 100% width instead of 100vw for header, main and footer
 - Use vh to set the height of nav, main, and footer sections
-  
+
+
+
 ##  Time to do:  
   
-1) Integration mobile first Iphone 6/7/8 without sidebar: 11h
+1) Integration mobile first Iphone 6/7/8 without sidebar: 10h *(check files index_old and styles_old.scss)*
+2) Technological monitoring about responsive design : 5h
   
 #####  Created by Jonathan Lutz

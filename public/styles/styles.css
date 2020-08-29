@@ -15,25 +15,33 @@ a {
   line-height: 3em; }
 
 body {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  background-color: blue;
-  position: relative; }
+  width: 100vw;
+  height: 100vh;
+  background-color: blue; }
 
 nav {
-  height: 4.8vw;
-  width: 100%;
+  height: 48px;
   background-color: red; }
 
 main {
-  height: 75.528vh;
-  width: 100%;
   background-color: green; }
+  @media screen and (max-device-width: 370px), screen and (max-width: 370px) {
+    main {
+      height: 429px; } }
+  @media screen and (min-device-width: 375px), screen and (min-width: 375px) {
+    main {
+      height: 528px; } }
+  @media screen and (min-device-width: 414px), screen and (min-width: 414px) {
+    main {
+      height: 597px; } }
+  @media screen and (min-device-width: 703px), screen and (min-width: 703px) {
+    main {
+      height: 885px; } }
+  @media screen and (min-device-width: 800px), screen and (min-width: 800px) {
+    main {
+      height: 780px; } }
 
 footer {
-  position: absolute;
-  top: calc(100% - 27.70619vh);
-  height: 27.70619vh;
-  width: 100%;
+  height: 215px;
+  width: 100vw;
   background-color: yellow; }

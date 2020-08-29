@@ -1,0 +1,36 @@
+$footer_height: 215px;
+$nav_height: 48px;
+
+
+@mixin responsive-main-height{
+
+    // Mobile Iphone 5/SE
+    @media screen and (max-device-width:370px), screen and (max-width:370px) {
+        height: 429px;
+    }
+
+
+    // Mobile Iphone 6/7/8
+    @media screen and (min-device-width:375px), screen and (min-width:375px) {
+        height: 528px;
+    }
+
+
+    // Mobile Iphone 6/7/8 Plus
+    @media screen and (min-device-width:414px), screen and (min-width:414px) {
+        height: 597px;
+    }
+
+
+    // Laptop
+    @media screen and (min-device-width:703px), screen and (min-width:703px) {
+        height: 885px;
+    }
+
+
+    // Large Screen
+    @media screen and (min-device-width:800px), screen and (min-width:800px) {
+        height: 780px;
+        // 122px for footer
+    }
+};
