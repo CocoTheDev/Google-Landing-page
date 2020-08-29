@@ -12,7 +12,6 @@ a {
   text-decoration: none;
   font-size: 0.7em;
   font-weight: 600;
-  line-height: 3em; }
 
 body {
   font-size: 16px;
@@ -143,10 +142,6 @@ footer {
       font-size: 13px; }
     footer .legal > div:first-child {
       padding-top: 0.769em; }
-
-@media screen and (max-device-width: 374px) {
-  footer {
-    background-color: red; } }
 
 @media screen and (min-device-width: 703px), screen and (min-width: 703px) {
   footer {
