@@ -1,9 +1,224 @@
-@import 'font';
 
 
+// Mobile first (Iphone 6/7/8)
 body {
-    width: 100wv;
-    height: 100wv;
-    background-color: blue;
+    font-size: 16px;
+    height: 100vh;
+    width: 100vw;
 }
 
+
+nav {
+    height: 3em;
+    width: 23.4375em;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+
+    & > div { // both left and right part of navbar 
+        display: flex;
+        flex-direction: row;
+    }
+
+    .left-nav {  
+        .hamburger {
+            margin: auto 1em;
+            height: 1.5em;
+            width: 1.5em;
+            max-height: 3em;;
+            img {
+                width: 100%;
+                height: 100%;
+                
+            }
+        }
+        .link {
+            padding-right: 0.6em;
+            padding-left: 0.6em;
+            margin: auto 0.4em auto 0.4em;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+    }
+
+    .right-nav {
+        width: 10.625em;
+        button {
+            width: 100%;
+            background-color: $google_button;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            margin: 0.5em 1em 0.5em 0.5em;
+        }
+        .bento {
+            padding: 1em;
+            img {
+                width: 1em;
+                height: 1em;
+            }
+        }
+    }
+
+    .active {
+        color: $google_blue;
+        border-bottom: 2px solid $google_blue;
+    }
+
+}
+
+.main {
+    height: 31.75em;
+    padding-top: 1.25em;
+
+    .logo {
+        margin: 2.25em auto 1.125em auto;
+        max-height: 4.5em;
+        max-width: 10em;
+
+        img {
+            margin: 0.5em 0;
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    .search {
+        margin: 0.5em;
+        height: 2.5em;
+        border: 1px solid #dadce0;
+        border-radius: 25px;
+
+        img {
+            height: 2.5em;
+            width: 1.5em;
+            margin-left: 0.5em;
+        }
+    }
+
+    .lang {
+        height: 1.75em;
+        margin-top: 1.25em;
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 0.8125px;
+        letter-spacing: normal;
+        text-align: center;
+        font-size: small;
+        
+        a {
+            padding: 0 0.61538em;
+            color: #1967d2;
+            font-size: 13px;
+            font-weight: normal;
+        }
+    }
+}
+
+footer {
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: normal;
+    background-color: $footer_bg;
+    height: 5.6875em;
+
+
+    & > div {
+        border-bottom: 1px solid $footer_border;
+    }
+    & > div:first-child {
+        border-top: none;
+    }
+    
+
+    .country {
+        height: 2.1875em;
+        margin: auto;
+        div {
+            line-height: 2.1874em;
+            margin: auto 0.75em;
+        }
+    }
+
+    .localisation {
+        padding: 1.1538em 0;
+        height: 1.923em;
+        font-size: 13px;
+        line-height: 1.5625em;
+        text-align: center;
+
+        img {
+            width: 0.77em;
+        }
+
+        .position {
+            font-weight: bold;
+            color: #333;
+            height: 4.308em;
+
+            &:after {
+                content: " - ";
+                color: #333;
+                font-weight: normal;
+            }
+
+        }
+
+    }
+
+    .legal {
+        background-color: $footer_bg;
+        text-align: center;
+        display: block;
+        padding-bottom: 0.769em;
+        border-bottom: none;
+
+        & > div {
+            & > a {
+                &:first-child {
+                    padding-left: 0;
+                }
+                padding-left: 2.077em;
+            }
+            
+        }
+
+        a {
+            line-height: 2.692em;
+            font-weight: 400;
+            font-size: 13px;
+        }
+
+        & > div:first-child {
+            padding-top: 0.769em;
+        }
+    }
+}
+
+
+// // Mobile Iphone 5/SE
+// @media screen and (max-device-width:374px) {
+
+
+
+// }
+
+
+
+// // Laptop
+// @media screen and (min-device-width:703px), screen and (min-width:703px) {
+
+//     footer {
+//         background-color: green;
+//     }
+
+// }
+
+// // Large Screen
+// @media screen and (min-device-width:800px), screen and (min-width:800px) {
+
+//     footer {
+//         background-color: yellow;
+//     }
+
+// }
