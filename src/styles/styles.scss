@@ -2,13 +2,6 @@
 @import 'variables';
 
 
- 
-@function get-vw($target) { 
-    $vw-context: (1000*.01) * 1px;
-    @return ($target/$vw-context) * 1vw;
-}
-
-
 
 body {
     width: 100vw;

@@ -89,9 +89,18 @@ main {
 
 
 
+
+## Tips & Advices
+1) First create sections with nothing in, place it on the page, and set @media queries *(use different background-color for better visual)*
+2) Continue with the same approche for the div in sections
+
+
+
+
+
 ##  Time to do:  
   
-1) Integration mobile first Iphone 6/7/8 without sidebar: 10h *(check files index_old and styles_old.scss)*
-2) Technological monitoring about responsive design : 5h
+1) **Integration mobile first Iphone 6/7/8 without sidebar: 10h** *(check files index_old and styles_old.scss)*
+2) **Technological monitoring about responsive design : 5h**
   
 #####  Created by Jonathan Lutz
