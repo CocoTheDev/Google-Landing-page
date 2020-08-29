@@ -15,11 +15,25 @@ a {
   line-height: 3em; }
 
 body {
-  width: 100vh;
-  height: 100vh;
-  background-color: blue; }
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: blue;
+  position: relative; }
 
 nav {
-  height: 8.45vh;
-  width: 100vw;
+  height: 4.8vw;
+  width: 100%;
   background-color: red; }
+
+main {
+  height: 75.528vh;
+  width: 100%;
+  background-color: green; }
+
+footer {
+  position: absolute;
+  top: calc(100% - 27.70619vh);
+  height: 27.70619vh;
+  width: 100%;
+  background-color: yellow; }

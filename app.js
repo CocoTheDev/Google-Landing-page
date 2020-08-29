@@ -1,8 +1,8 @@
-let viewportwidth = 568;
-let elemwidth = 48;
+let viewport = 776;
+let elem = 215;
 
-let result = elemwidth/(viewportwidth/100)
+let result = elem/(viewport/100)
 
 
 
-console.log(`${elemwidth}px de ${viewportwidth}px : ${result}`);
+console.log(`${elem}px de ${viewport}px : ${result}%`);

@@ -43,8 +43,12 @@ But this method isn't working as I expected, when I make my screen bigger, the f
 
 When design broke, we call this breakpoint, so normally I should use media query to re-size every element at this breakpoint. But I want to try another thing, a little more complicate but maybe worth it.
 
-My next goal is to make all elements sizes dynamics, so I will use the method calc() to write less code as possible, and make everything responsive. Let's try.
+My next goal is to make all elements sizes dynamics, so I will use the method calc() and vh units to write less code as possible, and make everything responsive. Let's try.
 
+
+3) ### How make responsive
+- Using 100% width instead of 100vw/vh for header, main and footer
+- Use vh to set the height of nav, main, and footer sections
   
 ##  Time to do:  
   
