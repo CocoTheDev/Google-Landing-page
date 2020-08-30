@@ -89,12 +89,17 @@
             .legal {
                 display: flex;
                 justify-content: space-between;
+                align-items: center;
                 height: 45px;
                 line-height: 45px;
 
                 & > div > a {
                     padding-left: 27px;
                     font-size: 14px;
+                }
+
+                & > div:first-child { // .mentions-links + .general-links
+                    padding-top: 0;
                 }
                 
                 .mentions-links {

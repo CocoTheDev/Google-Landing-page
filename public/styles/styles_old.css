@@ -194,11 +194,14 @@ footer {
     footer .legal {
       display: flex;
       justify-content: space-between;
+      align-items: center;
       height: 45px;
       line-height: 45px; }
       footer .legal > div > a {
         padding-left: 27px;
         font-size: 14px; }
+      footer .legal > div:first-child {
+        padding-top: 0; }
       footer .legal .mentions-links {
         order: 3;
         display: flex; }
