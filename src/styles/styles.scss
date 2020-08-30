@@ -1,28 +1,54 @@
-@import 'font';
-@import 'variables';
+// @import 'variables';
+// @import 'font';
 
 
+// body {
+//     width: 100vw;
+//     height: 100vh;
+// }
 
-body {
-    width: 100vw;
-    height: 100vh;
-    background-color: blue;
+// nav { 
+//     height: $nav_height;
+//     position: relative;
 
-}
+//     .left-nav {
+//         display: flex;
 
-nav { 
-    height: $nav_height;
-    background-color: red;
-} 
+//         .hamburger {
+//             max-height: 48px;
+//             img {
+//                 height: 24px;
+//                 width: 24px;
+//                 margin: auto 16px;
+//             }
+//         }  
+        
 
-main { 
-    background-color: green; 
-    @include responsive-main-height;
+//         a {
+//             text-transform: uppercase;
+//             padding: 12px 16px;
+//         }
 
-}
+//         .active {
+//             color: $google_blue;
+//             border-bottom: 2px solid $google_blue;
+//         }
 
-footer { 
-    height: $footer_height;
-    width: 100vw;
-    background-color: yellow;
-} 
+//     }
+    
+
+
+// } 
+
+// main { 
+//     background-color: green; 
+//     @include responsive-main-height;
+
+// }
+
+// footer { 
+//     height: $footer_height;
+//     width: 100vw;
+//     background-color: yellow;
+// } 
+

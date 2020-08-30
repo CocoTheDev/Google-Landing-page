@@ -60,15 +60,19 @@ Unfortunely this doesn't work. Let's see if there's another solution..
 
 4) ### Using mixins
 I finally found a solution : mixins !
-I create a mixin called responsive-main-height, and wrote inthere each height size according to each media query.
+I create a mixin called responsive, and wrote inthere each variations according to each media query.
 
-**_variables.scss**
+**_responsive.scss**
 ```
-@mixin responsive-main-height{
+@mixin responsive-mixin{
 
     // Mobile Iphone 5/SE
-    @media screen and (max-device-width:370px), screen and (max-width:370px) {
-        height: 429px;
+    @media screen and (max-device-width:374px), screen and (max-width:374px) {
+
+        .main {
+            height: 408px;
+        }
+        
     }
 
     ...
@@ -76,23 +80,23 @@ I create a mixin called responsive-main-height, and wrote inthere each height si
 ```
 **styles.scss**
 ```
-@import 'variables';
-main { 
-    @include responsive-main-height;
+@import 'responsive';
+body { 
+    @include responsive-mixin;
 }
 ```
 
-
-5) ### How I made it responsive
-- Using 100% width instead of 100vw for header, main and footer
-- Use vh to set the height of nav, main, and footer sections
 
 
 
 
 ## Tips & Advices
-1) First create sections with nothing in, place it on the page, and set @media queries *(use different background-color for better visual)*
-2) Continue with the same approche for the div in sections
+0. Set body height and width to 100 vh vw
+1. Code it Mobile First ! (Iphone 5/SE should be a good base)
+2. First create sections with nothing in, place it on the page, and set @media queries *(use different background-color for better visual)* 
+3. Use the responsive dev tool to play with your project and see how it breaks
+4. Continue with the child sections *(Don't miss to look at different viewport to see how div's moving)*
+
 
 
 
@@ -101,6 +105,6 @@ main {
 ##  Time to do:  
   
 1) **Integration mobile first Iphone 6/7/8 without sidebar: 10h** *(check files index_old and styles_old.scss)*
-2) **Technological monitoring about responsive design : 5h**
+2) **Technological monitoring about responsive design : 6h**
   
 #####  Created by Jonathan Lutz
