@@ -91,11 +91,46 @@ nav {
         height: 2.5em;
         border: 1px solid #dadce0;
         border-radius: 25px;
+        position: relative;
 
         img {
             height: 2.5em;
             width: 1.5em;
             margin-left: 0.5em;
+        }
+
+        form {
+            overflow: hidden;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+
+            button {
+                float: right;
+            }
+
+            span {
+                overflow: hidden;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+
+                input {
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    width: 100%;
+                    background: transparent;
+                    border: none;
+                    outline: none;
+                    padding-left: 40px;
+                }
+            }
+
         }
     }
 
@@ -200,5 +235,7 @@ footer {
 .desktop-only {
     display: none;
 }
+
+
 
 @include responsive-mixin;

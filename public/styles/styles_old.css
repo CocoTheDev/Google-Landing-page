@@ -75,11 +75,37 @@ nav {
     margin: 0.5em;
     height: 2.5em;
     border: 1px solid #dadce0;
-    border-radius: 25px; }
+    border-radius: 25px;
+    position: relative; }
     .main .search img {
       height: 2.5em;
       width: 1.5em;
       margin-left: 0.5em; }
+    .main .search form {
+      overflow: hidden;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0; }
+      .main .search form button {
+        float: right; }
+      .main .search form span {
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0; }
+        .main .search form span input {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          width: 100%;
+          background: transparent;
+          border: none;
+          outline: none;
+          padding-left: 40px; }
   .main .lang {
     height: 1.75em;
     color: black;
@@ -160,31 +186,6 @@ footer {
     height: 577px; }
     .main .logo {
       margin: 34px auto 16px auto; }
-    .main .search form {
-      overflow: hidden;
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0; }
-      .main .search form button {
-        float: right; }
-      .main .search form span {
-        overflow: hidden;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0; }
-        .main .search form span input {
-          position: absolute;
-          top: 0;
-          bottom: 0;
-          width: 100%;
-          background: transparent;
-          border: none;
-          outline: none;
-          padding-left: 0px; }
     .main .lang {
       margin-top: 1.25em; } }
 
@@ -200,34 +201,8 @@ footer {
     .main .lang {
       margin-top: 22px; }
     .main .search {
-      position: relative;
       margin-left: 16px;
-      margin-right: 16px; }
-      .main .search form {
-        overflow: hidden;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0; }
-        .main .search form button {
-          float: right; }
-        .main .search form span {
-          overflow: hidden;
-          position: absolute;
-          top: 0;
-          bottom: 0;
-          left: 0;
-          right: 0; }
-          .main .search form span input {
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            width: 100%;
-            background: transparent;
-            border: none;
-            outline: none;
-            padding-left: 40px; } }
+      margin-right: 16px; } }
 
 @media screen and (min-device-width: 800px), screen and (min-width: 800px) {
   .desktop-only {
