@@ -7,17 +7,19 @@
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/styles.css">
 
-    <title>Google Landing Page</title>
+    <script src="../app.js"></script>
+    <title>Google Landing page</title>
 </head>
 <body>
-
+    
+    
     <nav>
         <div class="left-nav">
             <div class="hamburger">
                 <img  src="../src/lib/hamburger.svg" alt="Navigation menu">
             </div>
-            <a class="active">Tous</a>
-            <a>Images</a>
+            <a class="link active">Tous</a>
+            <a class="link">Images</a>
         </div>
 
         <div class="right-nav">
@@ -28,30 +30,56 @@
         </div>
     </nav>
 
+    <div class="main">
+        <div class="logo">
+            <img src="../src/lib/logo_google.png" alt="Google logo">
+        </div>
+    
+        <div class="search">
+            <form method="post">
+                <button class="desktop-only"><img class="voice" src="../src/lib/google_voice.svg"></button>
+                <span><input type="text" title="Search" /></span>
+           </form>
+           <img src="../src/lib/search.svg">
+        </div>
 
-
-
-
-
-    <main>
-
-
-    </main>
-
-
-
-
-
-
+        <div class="cta">
+            <button class="desktop-only btn">Recherche Google</button>
+            <button class="desktop-only btn">J'ai de la chance</button>
+        </div>
+        <div class="lang">Google disponible en : <a>English</a></div>
+    </div>
 
     <footer>
-
-
+        <div class="country">
+            <div>France</div>
+        </div>
+        <div class="localisation mobile-only">
+            <img src="../src/lib/dot_grey.svg">
+            <span class="position">Position inconnue</span>
+            <span>Utiliser la position exacte</span>
+        </div>
+        <div class="legal">
+            <div class="mentions-links">
+                <a class="desktop-only" href="#">Infos consommateurs</a>
+                <a href="#">Paramètres</a>
+                <a href="#">Confidentialité</a>
+                <a href="#">Conditions</a>
+            </div>
+            <div class="infos mobile-only">
+                <a href="#">Infos consommateurs</a>
+            </div>
+            <div class="general-links">
+                <a href="#">Publicité</a>
+                <a href="#">Entreprise</a>
+                <a href="#">À propos</a>
+                <a class="desktop-only" href="#">Comment fonctionne la recherche Google ?</a>
+            </div>
+        </div>
     </footer>
-
-
-
     
+
+
+
 </body>
-<script src="../app.js"></script>
 </html>

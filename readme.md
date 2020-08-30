@@ -1,7 +1,7 @@
 
 
 #  Google home page integration  
-####  GitHub  Page :   
+####  GitHub  Page : https://cocothepimp.github.io/Google-Landing-page/
   
 ##  Goals and origins of the project :  
 Improving my skills in web front integration
@@ -106,7 +106,16 @@ body {
 
 ##  Time to do:  
   
-1) **Integration mobile first Iphone 6/7/8 without sidebar: 10h** *(check files index_old and styles_old.scss)*
-2) **Technological monitoring about responsive design : 6h**
+1. **Integration mobile first Iphone 6/7/8 without sidebar: 10h** 
+2. **Technological monitoring about responsive design : 6h**
+3. **Restarted using media query : Xh**
   
+## Ideas to release
+1. improve accessibility 
+    1. search bar focusable
+    2. vocal search
+    3. localisation
+    4. language
+
+
 #####  Created by Jonathan Lutz
