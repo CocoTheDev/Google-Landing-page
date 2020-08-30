@@ -64,9 +64,7 @@ nav {
 .main {
   padding-top: 1.25em; }
   .main .logo {
-    margin: 2.25em auto 18px auto;
-    max-height: 4.5em;
-    max-width: 10em; }
+    text-align: center; }
     .main .logo img {
       margin: 0.5em 0;
       height: 56px;
@@ -130,7 +128,6 @@ footer {
     background-color: #f2f2f2;
     text-align: center;
     display: block;
-    padding-bottom: 0.769em;
     border-bottom: none; }
     footer .legal > div > a {
       color: #5f6368;
@@ -147,20 +144,24 @@ footer {
 @media screen and (max-device-width: 374px), screen and (max-width: 374px) {
   .main {
     height: 408px; }
+    .main .logo {
+      margin: 34px auto 18px auto; }
   .lang {
-    margin-top: 1.25em; } }
+    margin-top: 1em; } }
 
 @media screen and (min-device-width: 375px), screen and (min-width: 375px) {
   .main {
     height: 507px; }
     .main .logo {
-      margin-top: 36px; }
+      margin: 36px auto 13px auto; }
   .lang {
-    margin-top: 1.25em; } }
+    margin-top: 15px; } }
 
 @media screen and (min-device-width: 414px), screen and (min-width: 414px) {
   .main {
-    height: 576px; }
+    height: 577px; }
+    .main .logo {
+      margin: 34px auto 16px auto; }
   .lang {
     margin-top: 1.25em; } }
 
@@ -168,12 +169,11 @@ footer {
   .main {
     height: 883px; }
     .main .logo {
-      margin: 146px auto 1.125em auto; }
+      margin: 130px auto 30px auto;
+      text-align: center; }
       .main .logo img {
         height: 92px;
         width: 272px; }
-    .main .search {
-      margin-top: 53px; }
     .main .lang {
       margin-top: 22px; } }
 

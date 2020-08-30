@@ -5,6 +5,10 @@
     @media screen and (max-device-width:374px), screen and (max-width:374px) {
         .main {
             height: 408px;
+
+            .logo {
+                margin: 34px auto 18px auto;
+            }
         }
 
         .lang {
@@ -20,25 +24,36 @@
             height: 507px;
 
             .logo {
-                margin-top: 36px;
+                margin: 36px auto 13px auto;
             }
+
         }
 
         .lang {
-            margin-top: 1.25em;
+            margin-top: 15px;
         }
     }
 
 
     // Mobile Iphone 6/7/8 Plus
     @media screen and (min-device-width:414px), screen and (min-width:414px) {
-        .main {
-            height: 576px;
+        .main { 
+            height: 577px;
+
+            .logo {
+                margin: 34px auto 16px auto;
+            }
         }
 
         .lang {
             margin-top: 1.25em;
         }
+
+        // footer {
+        //     .legal {
+        //         padding-bottom: 0;
+        //     }
+        // }
     }
 
 
@@ -49,7 +64,8 @@
             height: 883px;
 
             .logo {
-                margin: 146px auto 1.125em auto;
+                margin: 130px auto 30px auto;
+                text-align: center;
 
                 img {
                     height: 92px;
@@ -58,7 +74,7 @@
             }
 
             .search {
-                margin-top: 53px;
+                // margin-top: 53px;
             }
 
             .lang {
