@@ -4,8 +4,11 @@
     // Mobile Iphone 5/SE
     @media screen and (max-device-width:374px), screen and (max-width:374px) {
         .main {
-            // height: 429px;
             height: 408px;
+        }
+
+        .lang {
+            margin-top: 1em;
         }
         
     }
@@ -14,8 +17,15 @@
     // Mobile Iphone 6/7/8
     @media screen and (min-device-width:375px), screen and (min-width:375px) {
         .main {
-            // height: 528px;
             height: 507px;
+
+            .logo {
+                margin-top: 36px;
+            }
+        }
+
+        .lang {
+            margin-top: 1.25em;
         }
     }
 
@@ -23,8 +33,11 @@
     // Mobile Iphone 6/7/8 Plus
     @media screen and (min-device-width:414px), screen and (min-width:414px) {
         .main {
-            // height: 597px;
             height: 576px;
+        }
+
+        .lang {
+            margin-top: 1.25em;
         }
     }
 
@@ -36,7 +49,7 @@
             height: 883px;
 
             .logo {
-                padding-top: 131px;
+                margin: 146px auto 1.125em auto;
 
                 img {
                     height: 92px;
@@ -46,6 +59,10 @@
 
             .search {
                 margin-top: 53px;
+            }
+
+            .lang {
+                margin-top: 22px;
             }
         }
 

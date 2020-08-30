@@ -18,28 +18,6 @@ body {
   font-size: 16px;
   height: 100vh;
   width: 100vw; }
-  @media screen and (max-device-width: 374px), screen and (max-width: 374px) {
-    body .main {
-      height: 408px; } }
-  @media screen and (min-device-width: 375px), screen and (min-width: 375px) {
-    body .main {
-      height: 507px; } }
-  @media screen and (min-device-width: 414px), screen and (min-width: 414px) {
-    body .main {
-      height: 576px; } }
-  @media screen and (min-device-width: 703px), screen and (min-width: 703px) {
-    body .main {
-      height: 883px; }
-      body .main .logo {
-        padding-top: 131px; }
-        body .main .logo img {
-          height: 92px;
-          width: 272px; }
-      body .main .search {
-        margin-top: 53px; } }
-  @media screen and (min-device-width: 800px), screen and (min-width: 800px) {
-    body .main {
-      height: 780px; } }
 
 nav {
   height: 48px;
@@ -86,7 +64,7 @@ nav {
 .main {
   padding-top: 1.25em; }
   .main .logo {
-    margin: 2.25em auto 1.125em auto;
+    margin: 2.25em auto 18px auto;
     max-height: 4.5em;
     max-width: 10em; }
     .main .logo img {
@@ -104,7 +82,6 @@ nav {
       margin-left: 0.5em; }
   .main .lang {
     height: 1.75em;
-    margin-top: 1.25em;
     color: black;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 0.8125px;
@@ -166,3 +143,40 @@ footer {
       font-size: 13px; }
     footer .legal > div:first-child {
       padding-top: 0.769em; }
+
+@media screen and (max-device-width: 374px), screen and (max-width: 374px) {
+  .main {
+    height: 408px; }
+  .lang {
+    margin-top: 1.25em; } }
+
+@media screen and (min-device-width: 375px), screen and (min-width: 375px) {
+  .main {
+    height: 507px; }
+    .main .logo {
+      margin-top: 36px; }
+  .lang {
+    margin-top: 1.25em; } }
+
+@media screen and (min-device-width: 414px), screen and (min-width: 414px) {
+  .main {
+    height: 576px; }
+  .lang {
+    margin-top: 1.25em; } }
+
+@media screen and (min-device-width: 703px), screen and (min-width: 703px) {
+  .main {
+    height: 883px; }
+    .main .logo {
+      margin: 146px auto 1.125em auto; }
+      .main .logo img {
+        height: 92px;
+        width: 272px; }
+    .main .search {
+      margin-top: 53px; }
+    .main .lang {
+      margin-top: 22px; } }
+
+@media screen and (min-device-width: 800px), screen and (min-width: 800px) {
+  .main {
+    height: 780px; } }

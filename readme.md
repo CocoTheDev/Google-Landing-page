@@ -96,6 +96,8 @@ body {
 2. First create sections with nothing in, place it on the page, and set @media queries *(use different background-color for better visual)* 
 3. Use the responsive dev tool to play with your project and see how it breaks
 4. Continue with the child sections *(Don't miss to look at different viewport to see how div's moving)*
+5. Sometimes zoom out your view to see if all is centered
+6. If you're using mixin like me for responsive, call it at the end of your css file to overwritting default style
 
 
 
