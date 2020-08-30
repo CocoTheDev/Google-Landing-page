@@ -62,9 +62,11 @@ nav {
     border-bottom: 2px solid #4285f4; }
 
 .main {
-  padding-top: 1.25em; }
+  padding-top: 1.25em;
+  height: 408px; }
   .main .logo {
-    text-align: center; }
+    text-align: center;
+    margin: 34px auto 18px auto; }
     .main .logo img {
       margin: 0.5em 0;
       height: 56px;
@@ -85,7 +87,8 @@ nav {
     font-size: 0.8125px;
     letter-spacing: normal;
     text-align: center;
-    font-size: small; }
+    font-size: small;
+    margin-top: 1em; }
     .main .lang a {
       padding: 0 0.61538em;
       color: #1967d2;
@@ -141,13 +144,8 @@ footer {
     footer .legal > div:first-child {
       padding-top: 0.769em; }
 
-@media screen and (max-device-width: 374px), screen and (max-width: 374px) {
-  .main {
-    height: 408px; }
-    .main .logo {
-      margin: 34px auto 18px auto; }
-  .lang {
-    margin-top: 1em; } }
+.desktop-only {
+  display: none; }
 
 @media screen and (min-device-width: 375px), screen and (min-width: 375px) {
   .main {
@@ -178,5 +176,45 @@ footer {
       margin-top: 22px; } }
 
 @media screen and (min-device-width: 800px), screen and (min-width: 800px) {
+  .desktop-only {
+    display: block; }
+  .mobile-only {
+    display: none; }
   .main {
-    height: 780px; } }
+    height: auto; }
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    height: 81px;
+    border-top: 1px solid #e4e4e4; }
+    footer .country > div {
+      padding-left: 27px;
+      margin-left: 0; }
+    footer .legal {
+      display: flex;
+      justify-content: space-between;
+      height: 45px;
+      line-height: 45px; }
+      footer .legal > div > a {
+        padding-left: 27px;
+        font-size: 14px; }
+      footer .legal .mentions-links {
+        order: 3;
+        display: flex; }
+        footer .legal .mentions-links > a:first-child {
+          order: 1; }
+        footer .legal .mentions-links > a:nth-child(2) {
+          order: 4;
+          padding-right: 27px; }
+        footer .legal .mentions-links > a:nth-child(3) {
+          order: 2; }
+        footer .legal .mentions-links > a:last-child {
+          order: 3; }
+      footer .legal .general-links {
+        order: 1;
+        display: flex; }
+        footer .legal .general-links > a:first-child {
+          padding-left: 27px; }
+      footer .legal .infos {
+        order: 2; } }

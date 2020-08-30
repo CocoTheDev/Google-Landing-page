@@ -1,23 +1,6 @@
 
 @mixin responsive-mixin {
 
-    // Mobile Iphone 5/SE
-    @media screen and (max-device-width:374px), screen and (max-width:374px) {
-        .main {
-            height: 408px;
-
-            .logo {
-                margin: 34px auto 18px auto;
-            }
-        }
-
-        .lang {
-            margin-top: 1em;
-        }
-        
-    }
-
-
     // Mobile Iphone 6/7/8
     @media screen and (min-device-width:375px), screen and (min-width:375px) {
         .main {
@@ -48,12 +31,6 @@
         .lang {
             margin-top: 1.25em;
         }
-
-        // footer {
-        //     .legal {
-        //         padding-bottom: 0;
-        //     }
-        // }
     }
 
 
@@ -73,24 +50,91 @@
                 }
             }
 
-            .search {
-                // margin-top: 53px;
-            }
-
             .lang {
                 margin-top: 22px;
             }
         }
 
-        
     }
 
 
     // Large Screen
     @media screen and (min-device-width:800px), screen and (min-width:800px) {
-        .main {
-            height: 780px;
-            // 122px for footer
+        .desktop-only {
+            display: block;
         }
+
+        .mobile-only {
+            display: none;
+        }
+
+        .main {
+            height: auto;
+        }
+
+        footer {
+            position: absolute;
+            bottom: 0;
+            width: 100vw;
+            height: 81px;
+            border-top: 1px solid $footer_border ;
+
+            .country {
+                & > div {
+                    padding-left: 27px;
+                    margin-left: 0;
+                }
+            }
+
+            .legal {
+                display: flex;
+                justify-content: space-between;
+                height: 45px;
+                line-height: 45px;
+
+                & > div > a {
+                    padding-left: 27px;
+                    font-size: 14px;
+                }
+                
+                .mentions-links {
+                    order: 3;
+                    display: flex;
+
+                    & > a:first-child { // Infos consommateurs
+                        order: 1;
+                    }
+                    & > a:nth-child(2) { // Paramètres
+                        order: 4;
+                        padding-right: 27px;
+                    }
+                    & > a:nth-child(3) { // Confidentialité
+                        order: 2;
+                    }
+                    & > a:last-child { // Conditions
+                        order: 3;
+                    }
+                }
+
+                .general-links {
+                    order: 1;
+                    display: flex;
+
+                    & > a:first-child {
+                        padding-left: 27px;
+                    }
+
+                }
+
+                .infos {
+                    order: 2;
+                }
+
+
+                
+            }
+        }
+
+
     }
 };

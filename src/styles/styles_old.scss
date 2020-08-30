@@ -2,7 +2,7 @@
 @import 'font';
 @import 'responsive';
 
-// Mobile first (Iphone 6/7/8)
+// Mobile first (< Iphone 5S/SE)
 body {
     font-size: 16px;
     height: 100vh;
@@ -73,12 +73,11 @@ nav {
 
 .main {
     padding-top: 1.25em;
+    height: 408px;
 
     .logo {
-        // margin: 2.25em auto 18px auto;
         text-align: center;
-        // max-height: 4.5em;
-        // max-width: 10em;
+        margin: 34px auto 18px auto;
 
         img {
             margin: 0.5em 0;
@@ -108,6 +107,7 @@ nav {
         letter-spacing: normal;
         text-align: center;
         font-size: small;
+        margin-top: 1em;
         
         a {
             padding: 0 0.61538em;
@@ -124,8 +124,6 @@ footer {
     background-color: $footer_bg;
     height: $footer_height;
     color: $google_grey_dark;
-    
-
 
     & > div {
         border-bottom: 1px solid $footer_border;
@@ -179,12 +177,12 @@ footer {
         & > div {
             & > a {
                 color: $google_grey_dark;
+                padding-left: 2.077em;
+
                 &:first-child {
                     padding-left: 0;
                 }
-                padding-left: 2.077em;
             }
-            
         }
 
         a {
@@ -197,6 +195,10 @@ footer {
             padding-top: 0.769em;
         }
     }
+}
+
+.desktop-only {
+    display: none;
 }
 
 @include responsive-mixin;
