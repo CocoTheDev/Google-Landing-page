@@ -160,12 +160,37 @@ footer {
     height: 577px; }
     .main .logo {
       margin: 34px auto 16px auto; }
-  .lang {
-    margin-top: 1.25em; } }
+    .main .search form {
+      overflow: hidden;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0; }
+      .main .search form button {
+        float: right; }
+      .main .search form span {
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0; }
+        .main .search form span input {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          width: 100%;
+          background: transparent;
+          border: none;
+          outline: none;
+          padding-left: 0px; }
+    .main .lang {
+      margin-top: 1.25em; } }
 
 @media screen and (min-device-width: 703px), screen and (min-width: 703px) {
   .main {
-    height: 883px; }
+    height: 870px; }
     .main .logo {
       margin: 130px auto 30px auto;
       text-align: center; }
@@ -173,7 +198,36 @@ footer {
         height: 92px;
         width: 272px; }
     .main .lang {
-      margin-top: 22px; } }
+      margin-top: 22px; }
+    .main .search {
+      position: relative;
+      margin-left: 16px;
+      margin-right: 16px; }
+      .main .search form {
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0; }
+        .main .search form button {
+          float: right; }
+        .main .search form span {
+          overflow: hidden;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0; }
+          .main .search form span input {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+            background: transparent;
+            border: none;
+            outline: none;
+            padding-left: 40px; } }
 
 @media screen and (min-device-width: 800px), screen and (min-width: 800px) {
   .desktop-only {
