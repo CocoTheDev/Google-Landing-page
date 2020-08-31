@@ -78,13 +78,7 @@ I create a mixin called responsive, and wrote inthere each variations according 
     ...
 }
 ```
-**styles.scss**
-```
-@import 'responsive';
-body { 
-    @include responsive-mixin;
-}
-```
+
 
 
 
@@ -108,7 +102,7 @@ body {
   
 1. **Integration mobile first Iphone 6/7/8 without sidebar: 10h** 
 2. **Technological monitoring about responsive design : 6h**
-3. **Restarted using media query : Xh**
+3. **Restarted using media query (without js sidebar): 8h**
   
 ## Ideas to release
 1. improve accessibility 
