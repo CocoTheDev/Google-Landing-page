@@ -1,7 +1,7 @@
 
 
 #  Google home page integration  
-####  GitHub  Page : https://cocothepimp.github.io/Google-Landing-page/
+####  GitHub  Page : https://cocothepimp.github.io/Google-Landing-page/public
   
 ##  Goals and origins of the project :  
 Improving my skills in web front integration

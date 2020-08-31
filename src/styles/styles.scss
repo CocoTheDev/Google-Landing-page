@@ -40,8 +40,8 @@ nav {
             padding-right: 0.6em;
             padding-left: 0.6em;
             margin: 7.5px 0.4em 0px 0.4em;
-            text-transform: uppercase;
             font-weight: 600;
+            text-transform: uppercase;
         }
     }
 
@@ -49,11 +49,12 @@ nav {
         width: 10.625em;
         button {
             width: 100%;
-            background-color: $google_button;
+            background-color: $google_blue;
             color: white;
             border: none;
             border-radius: 4px;
             margin: 0.5em 1em 0.5em 0.5em;
+            font-weight: bold;
         }
         .bento {
             padding: 1em; 

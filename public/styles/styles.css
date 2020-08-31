@@ -41,17 +41,18 @@ nav {
     padding-right: 0.6em;
     padding-left: 0.6em;
     margin: 7.5px 0.4em 0px 0.4em;
-    text-transform: uppercase;
-    font-weight: 600; }
+    font-weight: 600;
+    text-transform: uppercase; }
   nav .right-nav {
     width: 10.625em; }
     nav .right-nav button {
       width: 100%;
-      background-color: #1A73E8;
+      background-color: #4285f4;
       color: white;
       border: none;
       border-radius: 4px;
-      margin: 0.5em 1em 0.5em 0.5em; }
+      margin: 0.5em 1em 0.5em 0.5em;
+      font-weight: bold; }
     nav .right-nav .bento {
       padding: 1em; }
       nav .right-nav .bento img {
@@ -224,6 +225,44 @@ footer {
     display: block; }
   .mobile-only {
     display: none; }
+  nav {
+    position: absolute;
+    right: 0;
+    justify-content: unset;
+    width: auto;
+    padding: 15px 0 33px 0;
+    height: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: normal; }
+    nav .left-nav {
+      margin: auto; }
+      nav .left-nav .link {
+        margin: 0 auto;
+        padding: 0 auto;
+        color: rgba(0, 0, 0, 0.87);
+        font-size: 13px;
+        font-weight: 400;
+        text-transform: capitalize;
+        line-height: unset;
+        cursor: pointer; }
+        nav .left-nav .link:hover {
+          opacity: 0.75;
+          text-decoration: underline; }
+    nav .right-nav {
+      margin: auto;
+      margin-right: -10px; }
+      nav .right-nav .bento {
+        padding: 0;
+        margin: auto 1em;
+        cursor: pointer; }
+        nav .right-nav .bento:hover {
+          opacity: 0.75; }
+      nav .right-nav button {
+        height: 30px;
+        margin: auto 0;
+        padding: 0;
+        width: 100px;
+        border-radius: 2px; }
   .main {
     height: auto; }
     .main .logo {
