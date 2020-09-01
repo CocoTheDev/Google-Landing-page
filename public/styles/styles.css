@@ -17,8 +17,7 @@ a {
 body {
   font-size: 16px;
   height: 100vh;
-  width: 100vw;
-  overflow: hidden; }
+  width: 100vw; }
 
 nav {
   height: 48px;
@@ -62,6 +61,15 @@ nav {
   nav .active {
     color: #4285f4;
     border-bottom: 2px solid #4285f4; }
+
+#sidebar {
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 250px;
+  padding-top: 15px; }
+  #sidebar .logo-sidebar {
+    height: 36px; }
 
 .main {
   padding-top: 1.25em;
@@ -221,7 +229,7 @@ footer {
       margin-left: 16px;
       margin-right: 16px; } }
 
-@media screen and (min-device-width: 800px), screen and (min-width: 800px) {
+@media screen and (min-device-width: 1048px), screen and (min-width: 1048px) {
   .desktop-only {
     display: block; }
   .mobile-only {
@@ -249,19 +257,22 @@ footer {
         nav .left-nav .link:hover {
           opacity: 0.75;
           text-decoration: underline; }
-    nav .right-nav .bento {
-      padding: 0;
-      padding-top: 5px;
-      margin: auto 1em;
-      cursor: pointer; }
-      nav .right-nav .bento:hover {
-        opacity: 0.75; }
-    nav .right-nav button {
-      height: 30px;
-      margin: auto 0;
-      padding: 0;
-      width: 93px;
-      border-radius: 2px; }
+    nav .right-nav {
+      width: 138px;
+      padding-right: 30px; }
+      nav .right-nav .bento {
+        padding: 0;
+        padding-top: 5px;
+        margin: auto 1em;
+        cursor: pointer; }
+        nav .right-nav .bento:hover {
+          opacity: 0.75; }
+      nav .right-nav button {
+        height: 30px;
+        margin: auto 0;
+        padding: 0;
+        width: 93px;
+        border-radius: 2px; }
   .main {
     height: auto; }
     .main .logo {
@@ -308,7 +319,8 @@ footer {
         order: 3;
         display: flex; }
         footer .legal .mentions-links > a:first-child {
-          order: 1; }
+          order: 1;
+          padding-left: 27px; }
         footer .legal .mentions-links > a:nth-child(2) {
           order: 4;
           padding-right: 27px; }

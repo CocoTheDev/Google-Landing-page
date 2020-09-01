@@ -63,7 +63,7 @@
 
 
     // Desktop Screen
-    @media screen and (min-device-width:800px), screen and (min-width:800px) {
+    @media screen and (min-device-width:1048px), screen and (min-width:1048px) {
         .desktop-only {
             display: block;
         }
@@ -103,7 +103,8 @@
             }
 
             .right-nav {
-
+                width: 138px;
+                padding-right: 30px;
                 .bento {
                     padding: 0;
                     padding-top: 5px;
@@ -197,6 +198,7 @@
 
                     & > a:first-child { // Infos consommateurs
                         order: 1;
+                        padding-left: 27px;
                     }
                     & > a:nth-child(2) { // Paramètres
                         order: 4;
@@ -226,6 +228,8 @@
         }
 
     }
+
+
 
 
 };
