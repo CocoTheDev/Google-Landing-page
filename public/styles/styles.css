@@ -199,22 +199,21 @@ footer {
     #sidebar > div:first-child .logo-sidebar {
       height: 36px;
       padding-bottom: 8px; }
-    #sidebar > div:first-child img {
-      padding: 0 15px; }
     #sidebar > div:first-child .hr {
       margin: 5px 0;
       background-color: #e1e1e1;
       height: 1px;
       padding: 0 0; }
     #sidebar > div:first-child > div {
-      height: 48px;
-      display: flex;
-      margin: 0; }
+      height: 48px; }
       #sidebar > div:first-child > div a {
         font-size: 16px;
         line-height: 20px;
         font-weight: 400;
         letter-spacing: normal; }
+        #sidebar > div:first-child > div a img {
+          padding: 0 15px;
+          padding-top: 12px; }
 
 .desktop-only {
   display: none; }
