@@ -29,17 +29,17 @@ So I simply put `` a:visited { color: inherit; }`` and everything was ok.
 
 2) ### Responsive Strategy
 Let's talk about my strategy to make responsive.
-I know em is a sizing unit, related to the pixel sizing of the font. So if you decide to zoom in your page (ctrl +), this is increasing the size of the text, also the size of elements wich is dimensioned with em.
+I know em is a sizing unit, related to the pixel sizing of the font. So if you decide to zoom in your page (ctrl +), this is increasing the size of the text, also the size of elements wich is dimensioned with em but none with px.
 
-Default browser text size: 16px, so 1em = 16px
+How em works: 1em = 1 size of the font-size (default browser 16px, so 1em = 16px)
 
 For the moment I looked at the width and height of the element on the official google homepage to know the exact size of the elements. And after I convert this size px to em, hoping it would make my design responsive. 
 
-So if element wich is, 100% width is equal to 375px, I convert 375px to 23.4375em (at font-size: 16px).
+So if element wich is, 100% width is equal to 375px, I convert 375px to 23.4375em (375px/16px).
 
-When somebody will zoom +50%, the text + elements will grow +50%.
+When somebody will zoom +50%, the text and elements will grow +50%.
 
-But this method isn't working as I expected, when I make my screen bigger, the footer wich is in em didn't grow as expected, there's a gap next to the footer.
+But this method isn't working as I expected, when I make my screen bigger, the footer wich is in em didn't grow as expected, there's an empty gap at the right side of the footer.
 
 When design broke, we call this breakpoint, so normally I should use media query to re-size every element at this breakpoint. But I want to try another thing, a little more complicate but maybe worth it.
 
@@ -58,7 +58,7 @@ Only the height of the main section change, for that reason I tried to declare a
 ```
 Unfortunely this doesn't work. Let's see if there's another solution..
 
-4) ### Using mixins
+4) ### Final solution
 I finally found a solution : mixins !
 I create a mixin called responsive, and wrote inthere each variations according to each media query.
 
