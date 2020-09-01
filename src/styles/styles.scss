@@ -1,3 +1,4 @@
+// @import url(//fonts.googleapis.com/css?family=Roboto);
 @import 'variables';
 @import 'font';
 @import 'responsive';
@@ -9,7 +10,7 @@ body {
     width: 100vw;
     
 }
-
+ 
 
 nav {
     height: $nav_height;
@@ -76,13 +77,44 @@ nav {
     position: absolute;
     top: 0;
     height: 100vh;
-    width: 250px;
-    // background-color: blue;
-    padding-top: 15px;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 250px 1fr;
 
-    .logo-sidebar{
-        height: 36px;
+    & > div:first-child { //sidebar
+        padding-top: 15px;
+        background-color: white;
+
+        .logo-sidebar{
+            height: 36px;
+            padding-bottom: 8px;
+        }
+
+        img { // Icons
+            padding: 0 15px;
+        }
+
+        .hr { // Separator
+            margin: 5px 0;
+            background-color: #e1e1e1;
+            height: 1px;
+            padding: 0 0;
+        }
+
+        & > div { // each divs
+            height: 48px;
+            
+
+            a {
+                font-size: 16px;
+                line-height: 20px;
+                // font-family: Roboto;
+                font-weight: 400;
+            }
+        }
     }
+
+    
 }
 .main {
     padding-top: 1.25em;
