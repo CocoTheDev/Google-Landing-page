@@ -201,22 +201,36 @@ footer {
       padding-top: 15px;
       width: 92px;
       padding-bottom: 8px; }
+    .sidebar-container #sidebar .hr {
+      margin: 5px 0;
+      background-color: #e1e1e1;
+      height: 1px;
+      padding: 0 0; }
     .sidebar-container #sidebar li {
       height: 48px;
-      display: table-row;
-      padding-left: 15px; }
-    .sidebar-container #sidebar .image {
-      display: table-cell;
-      width: 24px;
-      vertical-align: middle;
-      padding-left: 15px;
-      padding-right: 15px; }
-      .sidebar-container #sidebar .image img {
-        vertical-align: middle; }
-    .sidebar-container #sidebar .label {
-      display: table-cell;
-      vertical-align: middle;
-      width: 150px; }
+      display: table-row; }
+      .sidebar-container #sidebar li a {
+        line-height: unset; }
+        .sidebar-container #sidebar li a .image {
+          display: table-cell;
+          width: 24px;
+          height: 48px;
+          vertical-align: middle;
+          padding-left: 15px;
+          padding-right: 15px; }
+          .sidebar-container #sidebar li a .image img {
+            vertical-align: middle; }
+        .sidebar-container #sidebar li a .label {
+          display: table-cell;
+          vertical-align: middle;
+          width: 196px;
+          letter-spacing: normal;
+          line-height: 20px; }
+          .sidebar-container #sidebar li a .label label {
+            font-size: 16px;
+            font-weight: 400;
+            text-decoration: none;
+            color: #757575; }
 
 .desktop-only {
   display: none; }
