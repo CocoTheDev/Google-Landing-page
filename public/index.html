@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/styles.css">
 
-    <script src="../app.js"></script>
+    <script src="../app.js" defer></script>
     <title>Google Landing page</title>
 </head>
 <body>
@@ -15,7 +15,7 @@
     
     <nav>
         <div class="left-nav">
-            <div class="hamburger mobile-only">
+            <div id="hamburger" class="hamburger mobile-only">
                 <img  src="../src/lib/hamburger.svg" alt="Navigation menu">
             </div>
             <a class="link mobile-only active">Tous</a>
@@ -83,7 +83,7 @@
 
     <div id="modal-back"></div>
 
-    <div class="sidebar-container">
+    <div id="sidebar-container">
         <div id="sidebar">
                 <img class="logo-sidebar" src="../src/lib/logo_google.png" alt="logo google">
 

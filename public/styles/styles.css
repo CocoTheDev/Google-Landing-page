@@ -189,51 +189,56 @@ footer {
 #modal-back {
   position: absolute;
   top: 0;
+  right: 100vw;
   height: 100vh;
   width: 100vw;
-  background-color: rgba(0, 0, 0, 0.5); }
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: 0.5s;
+  display: blok; }
 
-.sidebar-container {
+#sidebar-container {
   position: absolute;
   top: 0;
+  right: calc(100vw + 250px);
   height: 100vh;
   width: 250px;
   display: grid;
   grid-template-columns: 250px 1fr;
-  background-color: white; }
-  .sidebar-container #sidebar {
+  background-color: white;
+  transition: 0.5s; }
+  #sidebar-container #sidebar {
     display: table; }
-    .sidebar-container #sidebar .logo-sidebar {
+    #sidebar-container #sidebar .logo-sidebar {
       padding-left: 15px;
       padding-top: 15px;
       width: 92px;
       padding-bottom: 8px; }
-    .sidebar-container #sidebar .hr {
+    #sidebar-container #sidebar .hr {
       margin: 5px 0;
       background-color: #e1e1e1;
       height: 1px;
       padding: 0 0; }
-    .sidebar-container #sidebar li {
+    #sidebar-container #sidebar li {
       height: 48px;
       display: table-row; }
-      .sidebar-container #sidebar li a {
+      #sidebar-container #sidebar li a {
         line-height: unset; }
-        .sidebar-container #sidebar li a .image {
+        #sidebar-container #sidebar li a .image {
           display: table-cell;
           width: 24px;
           height: 48px;
           vertical-align: middle;
           padding-left: 15px;
           padding-right: 15px; }
-          .sidebar-container #sidebar li a .image img {
+          #sidebar-container #sidebar li a .image img {
             vertical-align: middle; }
-        .sidebar-container #sidebar li a .label {
+        #sidebar-container #sidebar li a .label {
           display: table-cell;
           vertical-align: middle;
           width: 196px;
           letter-spacing: normal;
           line-height: 20px; }
-          .sidebar-container #sidebar li a .label label {
+          #sidebar-container #sidebar li a .label label {
             font-size: 16px;
             font-weight: 400;
             text-decoration: none;
@@ -241,6 +246,9 @@ footer {
 
 .desktop-only {
   display: none; }
+
+.show {
+  left: 0; }
 
 @media screen and (min-device-width: 375px), screen and (min-width: 375px) {
   .main {
