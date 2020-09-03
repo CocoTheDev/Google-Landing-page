@@ -86,7 +86,7 @@ I create a mixin called responsive, and wrote inthere each variations according 
 
 ## Tips & Advices
 0. Set body height and width to 100 vh vw
-1. Code it Mobile First ! (Iphone 5/SE should be a good base)
+1. Code it Mobile First ! (Iphone 5/SE should be a good start)
 2. First create sections with nothing in, place it on the page, and set @media queries *(use different background-color for better visual)* 
 3. Use the responsive dev tool to play with your project and see how it breaks
 4. Continue with the child sections *(Don't miss to look at different viewport to see how div's moving)*
@@ -111,6 +111,7 @@ I create a mixin called responsive, and wrote inthere each variations according 
     2. vocal search
     3. localisation
     4. language
+2. improove responsive at breakpoint
 
 
 #####  Created by Jonathan Lutz

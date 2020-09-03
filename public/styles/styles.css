@@ -186,34 +186,37 @@ footer {
     footer .legal > div:first-child {
       padding-top: 0.769em; }
 
-#sidebar {
+.sidebar-container {
   position: absolute;
   top: 0;
   height: 100vh;
   width: 100vw;
   display: grid;
-  grid-template-columns: 250px 1fr; }
-  #sidebar > div:first-child {
-    padding-top: 15px;
-    background-color: white; }
-    #sidebar > div:first-child .logo-sidebar {
-      height: 36px;
+  grid-template-columns: 250px 1fr;
+  background-color: white; }
+  .sidebar-container #sidebar {
+    display: table; }
+    .sidebar-container #sidebar .logo-sidebar {
+      padding-left: 15px;
+      padding-top: 15px;
+      width: 92px;
       padding-bottom: 8px; }
-    #sidebar > div:first-child .hr {
-      margin: 5px 0;
-      background-color: #e1e1e1;
-      height: 1px;
-      padding: 0 0; }
-    #sidebar > div:first-child > div {
-      height: 48px; }
-      #sidebar > div:first-child > div a {
-        font-size: 16px;
-        line-height: 20px;
-        font-weight: 400;
-        letter-spacing: normal; }
-        #sidebar > div:first-child > div a img {
-          padding: 0 15px;
-          padding-top: 12px; }
+    .sidebar-container #sidebar li {
+      height: 48px;
+      display: table-row;
+      padding-left: 15px; }
+    .sidebar-container #sidebar .image {
+      display: table-cell;
+      width: 24px;
+      vertical-align: middle;
+      padding-left: 15px;
+      padding-right: 15px; }
+      .sidebar-container #sidebar .image img {
+        vertical-align: middle; }
+    .sidebar-container #sidebar .label {
+      display: table-cell;
+      vertical-align: middle;
+      width: 150px; }
 
 .desktop-only {
   display: none; }
