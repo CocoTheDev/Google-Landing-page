@@ -60,7 +60,7 @@ Unfortunely this doesn't work. Let's see if there's another solution..
 
 4) ### Final solution
 I finally found a solution : mixins !
-I create a mixin called responsive, and wrote inthere each variations according to each media query.
+I create a mixin called responsive, and wrote inthere each variations according to each media query. And just called it in styles.css.
 
 **_responsive.scss**
 ```
@@ -88,30 +88,11 @@ I create a mixin called responsive, and wrote inthere each variations according 
 0. Set body height and width to 100 vh vw
 1. Code it Mobile First ! (Iphone 5/SE should be a good start)
 2. First create sections with nothing in, place it on the page, and set @media queries *(use different background-color for better visual)* 
-3. Use the responsive dev tool to play with your project and see how it breaks
-4. Continue with the child sections *(Don't miss to look at different viewport to see how div's moving)*
+3. Use the responsive dev tool view to see your project breakpoints
+4. Continue with the child sections 
 5. Sometimes zoom out your view to see if all is centered
 6. If you're using mixin like me for responsive, call it at the end of your css file to overwritting default style
 
-
-
-
-
-
-##  Time to do:  
-  
-1. **Integration mobile first Iphone 6/7/8 without sidebar: 10h** 
-2. **Technological monitoring about responsive design : 6h**
-3. **Restarted using media query (without sidebar): 10h**
-4. **Integration of the sidebar: xh**
-  
-## Ideas to release
-1. improve accessibility 
-    1. search bar focusable
-    2. vocal search
-    3. localisation
-    4. language
-2. improove responsive at breakpoint
 
 
 #####  Created by Jonathan Lutz
