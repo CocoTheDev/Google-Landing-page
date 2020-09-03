@@ -6,12 +6,6 @@ hamburger.addEventListener('click', toggle, false);
 sidebar_back.addEventListener('click', toggle, false);
 
 function toggle() {
-    console.log('hello');
-    sidebar_back.classList.toggle('show');
+    sidebar_back.classList.toggle('visible');
     sidebar.classList.toggle('show');
-
-    
-    // sidebar_back.style.right = '0';
-    // sidebar.style.right = 'null';
-    // sidebar.style.left = '0';
 }

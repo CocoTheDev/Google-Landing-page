@@ -189,17 +189,16 @@ footer {
 #modal-back {
   position: absolute;
   top: 0;
-  right: 100vw;
   height: 100vh;
   width: 100vw;
   background-color: rgba(0, 0, 0, 0.5);
   transition: 0.5s;
-  display: blok; }
+  display: none; }
 
 #sidebar-container {
   position: absolute;
   top: 0;
-  right: calc(100vw + 250px);
+  left: -100vw;
   height: 100vh;
   width: 250px;
   display: grid;
@@ -248,7 +247,10 @@ footer {
   display: none; }
 
 .show {
-  left: 0; }
+  transform: translateX(100vw); }
+
+.visible {
+  display: block !important; }
 
 @media screen and (min-device-width: 375px), screen and (min-width: 375px) {
   .main {
