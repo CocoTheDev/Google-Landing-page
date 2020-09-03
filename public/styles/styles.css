@@ -186,11 +186,18 @@ footer {
     footer .legal > div:first-child {
       padding-top: 0.769em; }
 
-.sidebar-container {
+#modal-back {
   position: absolute;
   top: 0;
   height: 100vh;
   width: 100vw;
+  background-color: rgba(0, 0, 0, 0.5); }
+
+.sidebar-container {
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 250px;
   display: grid;
   grid-template-columns: 250px 1fr;
   background-color: white; }
